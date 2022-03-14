@@ -8,6 +8,12 @@ console.log('JS OK!')
 
 
 
+//funzione 
+function invertiParola(x){
+    let xInversa = x.split('').reverse().join('');  
+    return xInversa;
+  }
+
 //chiedi all'utente di inserire una parola
 let parola = prompt('inserire una parola');
 
@@ -20,7 +26,10 @@ if(parola == parolaInversa){
   } else {
     console.log('la parola non è palindroma');
   }
-  
+
+
+
+
 
 
 
