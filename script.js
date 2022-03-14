@@ -42,3 +42,11 @@ if(parola == parolaInversa){
 // Sommiamo i due numeri
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
+
+
+//chiede all'utente di scegliere tra pari e dispari
+let pariDispari = prompt('Pari o Dispari?');
+
+//chiede all'utente di scegliere un numero tra 1 e 5
+let numero = parseInt(prompt('Scegli un numero da 1 a 5'));
+
