@@ -6,13 +6,20 @@ console.log('JS OK!')
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
-// Chiedere all’utente di inserire una parola
-var parola = prompt('Inserisci una parola ');
 
 
 
+//chiedi una parola all'utente
+let parola = prompt('Inserisci una parola');
 
+//se è palindroma restituisci vero
+if (palindroma(parola)) {
+    console.log('La parola è palindroma ')
 
+// se !palindroma restituisci falso
+} else{
+    console.log('La parola non è palindroma ')
+}
 
 
 
