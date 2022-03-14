@@ -82,5 +82,11 @@ let risultato = isPari(somma);
 
 console.log('utente:' + pariODispari);
 
+// se il risultato ( la somma dei due numeri ) è uguale alla scelta dell'utente, vincerà. Altrimenti vincerà il computer
+if (risultato == pariODispari){
+    console.log("L'utente ha vinto!");
+} else {
+    console.log("Il computer ha vinto!");
+}
 
 
