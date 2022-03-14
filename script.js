@@ -8,18 +8,22 @@ console.log('JS OK!')
 
 
 
+//chiedi all'utente di inserire una parola
+let parola = prompt('inserire una parola');
 
-//chiedi una parola all'utente
-let parola = prompt('Inserisci una parola');
+let parolaInversa = invertiParola(parola);
 
-//se è palindroma restituisci vero
-if (palindroma(parola)) {
-    console.log('La parola è palindroma ')
+if(parola == parolaInversa){
+    //se è palindroma restituisci vero
+    console.log('la parola è palindroma');
+    // se !palindroma restituisci falso
+  } else {
+    console.log('la parola non è palindroma');
+  }
+  
 
-// se !palindroma restituisci falso
-} else{
-    console.log('La parola non è palindroma ')
-}
+
+
 
 
 
