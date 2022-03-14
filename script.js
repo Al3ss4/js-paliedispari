@@ -44,8 +44,28 @@ if(parola == parolaInversa){
 // Dichiariamo chi ha vinto.
 
 
+
+// function numeri random pc 
+function numeroPcRandom(min,max){
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+// function somma due numeri 
+function sommaNumeri(numeroPrimo, numeroSecondo){
+    return sommaFunction = numeroPrimo + numeroSecondo;
+}
+
+//function per verificare se la somma dei due numeri sia pari o dispari 
+function isPari(sommaFunct){
+    if(sommaFunct % 2 == 0){
+        return 'pari';
+    } else{
+        return 'dispari';
+    }    
+}
+
 //chiede all'utente di scegliere tra pari e dispari
-let pariDispari = prompt('Pari o Dispari?');
+let pariODispari = prompt('Pari o Dispari?');
 
 //chiede all'utente di scegliere un numero tra 1 e 5
 let numero = parseInt(prompt('Scegli un numero da 1 a 5'));
@@ -53,9 +73,14 @@ let numero = parseInt(prompt('Scegli un numero da 1 a 5'));
 //genera un numero random al pc tra 1 e 5 
 let generaNumeroRandom = numeroPcRandom(1,5);
 
+// somma i numeri del pc e dell'utente
+let somma = sommaNumeri(numero, generaNumeroRandom);
 
-// function numeri random pc 
-function numeroPcRandom(min,max){
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+// dichiara se la somma dei due numeri sia pari o dispari
+let risultato = isPari(somma);
+
+
+console.log('utente:' + pariODispari);
+
+
 
