@@ -51,10 +51,11 @@ let pariDispari = prompt('Pari o Dispari?');
 let numero = parseInt(prompt('Scegli un numero da 1 a 5'));
 
 //genera un numero random al pc tra 1 e 5 
-var generaNumeroRandom = numeroPcRandom(1,5);
+let generaNumeroRandom = numeroPcRandom(1,5);
 
 
 // function numeri random pc 
 function numeroPcRandom(min,max){
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
